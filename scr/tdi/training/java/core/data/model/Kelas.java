@@ -6,6 +6,12 @@ public class Kelas{
     private Integer tahunAjaran;
     private String jurusan;
 
+    public Kelas(String nama, Integer tahunAjaran, String jurusan){
+        this.nama = nama;
+        this.tahunAjaran = tahunAjaran;
+        this.jurusan = jurusan;
+    }
+
     public String getNama(){
         return this.nama;
     }
@@ -13,10 +19,10 @@ public class Kelas{
         this.nama = nama;
     }
 
-    public String getTahunAjaran(){
+    public Integer getTahunAjaran(){
         return this.tahunAjaran;
     }
-    public void setTahunAjaran(String tahunAjaran){
+    public void setTahunAjaran(Integer tahunAjaran){
         this.tahunAjaran = tahunAjaran;
     }
 
